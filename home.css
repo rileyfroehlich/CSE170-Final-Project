@@ -68,17 +68,23 @@
 
 .lesson a:hover {
     color: rgb(0, 209, 0);
+    border-color: rgb(0, 209, 0);
 }
 /*END OF LESSONS CSS*/
 
 /*NAVBAR CSS*/
 .navbar{
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-cell{
+    padding-left: 20px;
 }
 
 .navbar a {
-    float: left;
     background: #769EFA;
     border-radius: 5px;
     text-align: center;
