@@ -1,0 +1,183 @@
+.container{
+    border-color: red;
+    align-items: center;
+    width: 30%;
+}
+
+/*TOP BAR INFO*/
+.flex-container-top-info{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.difficulty-setting{
+    flex: 75%;
+    font-family: Lexend Deca;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    color: #769EFA;
+}
+
+.streak{
+    font-family: Lexend Deca;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 45px;
+    color: #FFB800;
+}
+
+/*END TOP BAR INFO*/
+
+
+/*LESSONS CSS*/
+.flex-container-lessons{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.lesson{
+    /*border circle*/
+    border: 2px solid #394E99;
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+    /*font*/
+    font-family: Lexend Deca;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 45px;
+ 
+
+    /*to center*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lesson a{
+    text-align: center;
+    text-decoration: none;
+}
+
+.lesson a:hover {
+    color: rgb(0, 209, 0);
+    border-color: rgb(0, 209, 0);
+}
+/*END OF LESSONS CSS*/
+
+/*NAVBAR CSS*/
+.navbar{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-cell{
+    padding-left: 20px;
+}
+
+.navbar a {
+    background: #769EFA;
+    border-radius: 5px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/*END OF NAVBAR CSS*/
+
+
+/***********************************
+**START OF QUESTION CSS FORMATTING**
+************************************/
+
+/*LESSON INFO CSS*/
+
+/*END OF LESSON INFO CSS*/
+
+/*QUESTION CSS*/
+.question{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+/*END OF QUESTION CSS*/
+
+
+/*ANSWER CHOICE CSS*/
+.question-prompt{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.answer-choice{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+}
+/*
+.correct{
+
+}
+*/
+/*END OF ANSWER CHOICE CSS*/
+
+/*FLEX FORMATTING*/
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding-top: 20px;
+}
+
+.column {
+    flex: 50%;
+}
+
+.column-answer-choice{
+    flex: 25%;
+}
+/*END OF FLEX FORMATTING*/
