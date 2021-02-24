@@ -4,44 +4,70 @@
     "projects": [
         {
             "lesson": "1.1",
-            "description":"blah blah blah",
+            "description":"Beginner level lesson 1.1 - operators",
             "question":"num1 = 5\nnum2 = 7\nsum = num1 ___ num2\nprint(‘The sum of {0} and {1} is {2}’.format(num1, num2, sum))",
             "question-prompt":"Select the operator so sum is equal to num1 plus num2:", 
             "answer-choice-1":"+", 
             "answer-choice-2":"-", 
             "answer-choice-3":"*", 
             "answer-choice-4":"/",
-            "correct-answer":"if this equals answer clicked good"
+            "correct-answer":"answer-choice-1"
         },
         {
             "lesson": "1.2", 
-            "description":"", 
-            "question":"the question", 
-            "answer-choice-1":"+", 
-            "answer-choice-2":"-", 
-            "answer-choice-3":"*", 
-            "answer-choice-4":"/", 
-            "correct-answer":"if this equals answer clicked good"
+            "description":"Beginner level lesson 1.2 - loops", 
+            "question":"var = 50\nif ( var == 50 ) : print \"Value of expression is 50\"\nprint \"Hello!\"", 
+            "question-prompt":"What is the result when the above code is executed?", 
+            "answer-choice-1":"Value of expression is 50", 
+            "answer-choice-2":"Hello!", 
+            "answer-choice-3":"Value of expression is 50\nHello!", 
+            "answer-choice-4":"This code will produce an error.", 
+            "correct-answer":"answer-choice-3"
         },
         {
             "lesson":"1.3",
-            "description":"",
-            "question":"the question",
-            "answer-choice-1":"+", 
-            "answer-choice-2":"-", 
-            "answer-choice-3":"*", 
-            "answer-choice-4":"/",
-            "correct-answer":"if this equals answer clicked good"	
+            "description":"Beginner level lesson 1.3 - strings",
+            "question":"var1 = 'Hello World'\nvar9 = 'Testing123'",
+            "question-prompt":"Strings are created by enclosing characters in quotes. Select the correct variable:", 
+            "answer-choice-1":"var2 = 'var2'", 
+            "answer-choice-2":"var3 = var3", 
+            "answer-choice-3":"var 4 = 'var4'", 
+            "answer-choice-4":"var 5 = '' var5",
+            "correct-answer":"answer-choice-3"	
         },
         {
-            "lesson": "1.4", 
-            "description": "", 
-            "question": "the question", 
-            "answer-choice-1":"+", 
-            "answer-choice-2":"-", 
-            "answer-choice-3":"*", 
-            "answer-choice-4":"/",
-            "correct-answer":"if this equals answer clicked good"
+            "lesson":"1.4",
+            "description":"Beginner level lesson 1.4 - lists",
+            "question":"list1 = ['chemistry', 'biology', 2017, 2019];\nlist2 = [1, 2, 3, 4, 5 ];\nlist3 = ['a', 'b', 'c', 'd']",
+            "question-prompt":"Lists are written as a list of comma-separated items between square brackets where items do not need to be of the same type.. Select the correct list:", 
+            "answer-choice-1":"list4 = 6, 7, 8, 9, 10", 
+            "answer-choice-2":"list4 = [[6, 7, 8, 9, 10]];", 
+            "answer-choice-3":"list4 = [6, 7, 8, 9, 10];", 
+            "answer-choice-4":"list4 = {6, 7, 8, 9, 10};",
+            "correct-answer":"answer-choice-3"	
+        },
+        {
+            "lesson": "1.5", 
+            "description": "Beginner level lesson 1.5 - functions", 
+            "question": "def printer( str ):\n'Printing a passed string into this function printer'\nprint str\nreturn", 
+            "question-prompt":"Function blocks begin with the keyword def following by the function name and parentheses. Select the correct function definition:", 
+            "answer-choice-1":"def def", 
+            "answer-choice-2":"def func1{str}", 
+            "answer-choice-3":"def func2[str]", 
+            "answer-choice-4":"def func3(str)",
+            "correct-answer":"answer-choice-4"
+            	
+        }, 
+        {
+            "lesson": "1.6", 
+            "description": "Beginner level lesson 1.6 - dictionary", 
+            "question": "{'Fruit': 'Apple', 'Color': 'Red', 'Amount': 7}\nprint \"dict['Fruit']:\", dict['Fruit']\nprint \"dict['Amount']:\", dict['Amount']", 
+            "question-prompt":"Select the appropriate result when the code above is executed.", 
+            "answer-choice-1":"dict['Fruit']: Fruit\ndict['Amount']: Amount", 
+            "answer-choice-2":"dict['Fruit']: Apple\ndict['Amount']: 7", 
+            "answer-choice-3":"dict['Fruit']: Fruit\ndict['Amount']: 7", 
+            "answer-choice-4":"dict['Fruit']: Apple\ndict['Amount']: Amount",
+            "correct-answer":"answer-choice-2"
             	
         }
     ]
