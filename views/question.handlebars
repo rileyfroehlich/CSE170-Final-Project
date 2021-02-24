@@ -17,7 +17,7 @@
         <div class="top-bar">
             <div class="flex-container-top-info">
                 <div class="difficulty-setting">
-                    Beginner Lesson 1.1
+                    {{difficulty}} + " Lesson " + {{lesson}}
                 </div>
             </div>
         </div>
@@ -27,27 +27,27 @@
         </div>
 
         <div class="question">
-            num1 = 5<br>num2 = 7<br>sum = num1 ___ num2<br><br>print(‘The sum of {0} and {1} is {2}’.format(num1, num2, sum))
+            {{question}}
         </div>
   
         <div class="flex-container-answer-choices">
             <div class="row">
                 <div class="question-prompt">
-                    Select the operator so sum is equal to num1 plus num2:
+                    {{question-prompt}}
                 </div>
             </div>
             <div class="row">
                 <div class="column-answer-choice">
-                    <button class="correct answer-choice">+</button>
+                    <button class="correct answer-choice">{{answer-choice-1}}</button>
                 </div>
                 <div class="column-answer-choice">
-                    <button class="answer-choice">-</button>
+                    <button class="answer-choice">{{answer-choice-2}}</button>
                 </div>
                 <div class="column-answer-choice">
-                    <button class="answer-choice">*</button>
+                    <button class="answer-choice">{{answer-choice-3}}</button>
                 </div>
                 <div class="column-answer-choice">
-                    <button class="answer-choice">/</button>
+                    <button class="answer-choice">{{answer-choice-4}}</button>
                 </div>
             </div>
         </div>

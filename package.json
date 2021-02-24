@@ -1,20 +1,20 @@
 {
-  "name": "cs170-project",
+  "name": "cs147-lab-1",
   "description": "Serving static content via html files",
   "version": "0.0.1",
-  "author": "Riley <rileyfro2@gmail.com>",
-
+  "author": "CS147 Staff <cs147@cs.stanford.edu>",
   "repository": {
-  	"type": "git",
-  	"url": "https://github.com/rileyfroehlich/CSE170-Final-Project"
+    "type": "git",
+    "url": "https://github.com/StanfordHCI/cs147"
   },
-  "license": "none",
-
+  "license": "MIT",
   "main": "server.js",
   "dependencies": {
-    "express": "3.x"
+    "express": "^3.21.2",
+    "express3-handlebars": "^0.5.2",
+    "require": "^2.4.20"
   },
   "engines": {
-  	"node": "0.10.x"
+    "node": "0.10.x"
   }
 }

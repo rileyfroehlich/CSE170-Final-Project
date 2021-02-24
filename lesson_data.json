@@ -1,0 +1,48 @@
+{
+    "difficulty":"Beginner",
+    "streak":"5",
+    "projects": [
+        {
+            "lesson": "1.1",
+            "description":"blah blah blah",
+            "question":"num1 = 5\nnum2 = 7\nsum = num1 ___ num2\nprint(‘The sum of {0} and {1} is {2}’.format(num1, num2, sum))",
+            "question-prompt":"Select the operator so sum is equal to num1 plus num2:", 
+            "answer-choice-1":"+", 
+            "answer-choice-2":"-", 
+            "answer-choice-3":"*", 
+            "answer-choice-4":"/",
+            "correct-answer":"if this equals answer clicked good"
+        },
+        {
+            "lesson": "1.2", 
+            "description":"", 
+            "question":"the question", 
+            "answer-choice-1":"+", 
+            "answer-choice-2":"-", 
+            "answer-choice-3":"*", 
+            "answer-choice-4":"/", 
+            "correct-answer":"if this equals answer clicked good"
+        },
+        {
+            "lesson":"1.3",
+            "description":"",
+            "question":"the question",
+            "answer-choice-1":"+", 
+            "answer-choice-2":"-", 
+            "answer-choice-3":"*", 
+            "answer-choice-4":"/",
+            "correct-answer":"if this equals answer clicked good"	
+        },
+        {
+            "lesson": "1.4", 
+            "description": "", 
+            "question": "the question", 
+            "answer-choice-1":"+", 
+            "answer-choice-2":"-", 
+            "answer-choice-3":"*", 
+            "answer-choice-4":"/",
+            "correct-answer":"if this equals answer clicked good"
+            	
+        }
+    ]
+}
