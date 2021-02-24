@@ -1,7 +1,8 @@
 .container{
     border-color: red;
     align-items: center;
-    width: 30%;
+    width: 50%;
+    float: center;
 }
 
 /*TOP BAR INFO*/
@@ -22,6 +23,7 @@
     line-height: 45px;
     text-align: center;
     color: #769EFA;
+    margin: 0 auto;
 }
 
 .streak{
@@ -31,6 +33,7 @@
     font-size: 36px;
     line-height: 45px;
     color: #FFB800;
+    margin: 0 auto;
 }
 
 /*END TOP BAR INFO*/
@@ -40,8 +43,9 @@
 .flex-container-lessons{
     display: flex;
     flex-direction: column;
-    max-width: 100%;
     justify-content: space-between;
+    overflow-y: auto;
+    height: 440px;
 }
 
 .lesson{
@@ -64,6 +68,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 75px;
+    margin-top: 0px;
 }
 
 .lesson a{
@@ -83,10 +89,12 @@
     padding-bottom: 20px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    align-self: center;
 }
 
 .navbar-cell{
-    padding-left: 20px;
+    margin: 0 auto;
 }
 
 .navbar a {
@@ -131,6 +139,7 @@
     background: #FFFFFF;
     border: 1px solid #000000;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 /*END OF QUESTION CSS*/
@@ -156,6 +165,7 @@
     line-height: 22px;
     text-align: center;
     color: #000000;
+    margin: 0 auto;
 }
 /*
 .correct{

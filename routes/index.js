@@ -6,16 +6,18 @@
 var data = require('../lesson_data.json')
 
 exports.viewHome = function(req, res){
-  console.log(data)
   res.render('home', data)
 };
 
 exports.viewLogin = function(req, res){
-  console.log(data)
   res.render('login', data)
 };
 
 exports.viewQuestion = function(req, res){
-  console.log(data)
-  res.render('question', data)
-};
+	var projectID = req.params.lesson;
+	var split = projectID.split(".");
+	projectID = split[1]
+	projectID = parseInt(projectID) - 1;
+
+    res.render('question', data['projects'][projectID])
+}
