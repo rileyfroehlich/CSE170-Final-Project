@@ -5,7 +5,17 @@
 
 var data = require('../lesson_data.json')
 
-exports.view = function(req, res){
+exports.viewHome = function(req, res){
   console.log(data)
   res.render('home', data)
+};
+
+exports.viewLogin = function(req, res){
+  console.log(data)
+  res.render('login', data)
+};
+
+exports.viewQuestion = function(req, res){
+  console.log(data)
+  res.render('question', data)
 };

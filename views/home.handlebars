@@ -27,18 +27,21 @@
         </div>
         <div class="flex-container-lessons">
             {{#each projects}}
+                {{#if lesson-new-row}}
                     <div class="row">
                         <div class="column">
                             <div class="lesson">
                                 <a href="#" + {{lesson}}>{{lesson}}</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="column">
-                        <div class="lesson">
-                            <a href="#" + {{lesson}}>{{lesson}}</a>
+                {{else}}
+                        <div class="column">
+                            <div class="lesson">
+                                <a href="#" + {{lesson}}>{{lesson}}</a>
+                            </div>
                         </div>
                     </div>
+                {{/if}}
             {{/each}}
 
         <div class="navbar">
