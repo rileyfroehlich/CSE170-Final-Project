@@ -5,7 +5,7 @@
         {
             "lesson": "1.1",
             "description":"Beginner Lesson 1.1 - Operators", 
-            "question":"num1 = 5\nnum2 = 7\nsum = num1 ___ num2\nprint(‘The sum of {0} and {1} is {2}’.format(num1, num2, sum))",
+            "question":"<p>num1 = 5<br>num2 = 7<br>sum = num1 ___ num2<br>print(‘The sum of {0} and {1} is {2}’.format(num1, num2, sum))</p>",
             "question-prompt":"Select the operator so sum is equal to num1 plus num2:", 
             "answer-choice-1":"+", 
             "answer-choice-2":"-", 
@@ -17,11 +17,11 @@
         {
             "lesson": "1.2", 
             "description":"Beginner Lesson 1.2 - Loops", 
-            "question":"var = 50\nif ( var == 50 ) : print \"Value of expression is 50\"\nprint \"Hello!\"", 
+            "question":"<p>var = 50<br>if ( var == 50 ) : print \"Value of expression is 50\"<br>print \"Hello!\"</p>", 
             "question-prompt":"What is the result when the above code is executed?", 
             "answer-choice-1":"Value of expression is 50", 
             "answer-choice-2":"Hello!", 
-            "answer-choice-3":"Value of expression is 50\nHello!", 
+            "answer-choice-3":"Value of expression is 50<br>Hello!", 
             "answer-choice-4":"This code will produce an error.", 
             "correct-answer":"answer-choice-3",
             "lesson-new-row": false
@@ -29,8 +29,8 @@
         {
             "lesson":"1.3",
             "description":"Beginner Lesson 1.3 - Strings",
-            "question":"var1 = 'Hello World'\n>var9 = 'Testing123'",
-            "question-prompt":"Strings are created by enclosing characters in quotes. Select the correct variable:", 
+            "question":"<p>var1 = 'Hello World'<br>>var9 = 'Testing123'",
+            "question-prompt":"Strings are created by enclosing characters in quotes. Select the correct variable:</p>", 
             "answer-choice-1":"var2 = 'var2'", 
             "answer-choice-2":"var3 = var3", 
             "answer-choice-3":"var 4 = 'var4'", 
@@ -41,7 +41,7 @@
         {
             "lesson":"1.4",
             "description":"Beginner Lesson 1.4 - Lists",
-            "question":"list1 = ['chemistry', 'biology', 2017, 2019];\nlist2 = [1, 2, 3, 4, 5 ];\nlist3 = ['a', 'b', 'c', 'd']",
+            "question":"<p>list1 = ['chemistry', 'biology', 2017, 2019];<br>list2 = [1, 2, 3, 4, 5 ];<br>list3 = ['a', 'b', 'c', 'd']</p>",
             "question-prompt":"Lists are written as a list of comma-separated items between square brackets where items do not need to be of the same type.. Select the correct list:", 
             "answer-choice-1":"list4 = 6, 7, 8, 9, 10", 
             "answer-choice-2":"list4 = [[6, 7, 8, 9, 10]];", 
@@ -53,7 +53,7 @@
         {
             "lesson": "1.5", 
             "description": "Beginner Lesson 1.5 - Functions", 
-            "question": "def printer( str ):\n'Printing a passed string into this function printer'\nprint str\nreturn", 
+            "question": "<p>def printer( str ):<br>'Printing a passed string into this function printer'<br>print str<br>return</p>", 
             "question-prompt":"Function blocks begin with the keyword def following by the function name and parentheses. Select the correct function definition:", 
             "answer-choice-1":"def def", 
             "answer-choice-2":"def func1{str}", 
@@ -66,27 +66,14 @@
         {
             "lesson": "1.6", 
             "description": "Beginner Lesson 1.6 - Dictionaries", 
-            "question": "{'Fruit': 'Apple', 'Color': 'Red', 'Amount': 7}\nprint \"dict['Fruit']:\", dict['Fruit']\nprint \"dict['Amount']:\", dict['Amount']", 
+            "question": "<p>{'Fruit': 'Apple', 'Color': 'Red', 'Amount': 7}<br>print \"dict['Fruit']:\", dict['Fruit']<br>print \"dict['Amount']:\", dict['Amount']</p>", 
             "question-prompt":"Select the appropriate result when the code above is executed.", 
-            "answer-choice-1":"dict['Fruit']: Fruit\ndict['Amount']: Amount", 
-            "answer-choice-2":"dict['Fruit']: Apple\ndict['Amount']: 7", 
-            "answer-choice-3":"dict['Fruit']: Fruit\ndict['Amount']: 7", 
-            "answer-choice-4":"dict['Fruit']: Apple\ndict['Amount']: Amount",
+            "answer-choice-1":"dict['Fruit']: Fruit<br>dict['Amount']: Amount", 
+            "answer-choice-2":"dict['Fruit']: Apple<br>dict['Amount']: 7", 
+            "answer-choice-3":"dict['Fruit']: Fruit<br>dict['Amount']: 7", 
+            "answer-choice-4":"dict['Fruit']: Apple<br>dict['Amount']: Amount",
             "correct-answer":"answer-choice-2",
             "lesson-new-row": false
-            	
-        },
-        {
-            "lesson": "1.7", 
-            "description": "Beginner Lesson 1.7 - Test json element", 
-            "question": "{'Fruit': 'Apple', 'Color': 'Red', 'Amount': 7}\nprint \"dict['Fruit']:\", dict['Fruit']\nprint \"dict['Amount']:\", dict['Amount']", 
-            "question-prompt":"Select the appropriate result when the code above is executed.", 
-            "answer-choice-1":"dict['Fruit']: Fruit\ndict['Amount']: Amount", 
-            "answer-choice-2":"dict['Fruit']: Apple\ndict['Amount']: 7", 
-            "answer-choice-3":"dict['Fruit']: Fruit\ndict['Amount']: 7", 
-            "answer-choice-4":"dict['Fruit']: Apple\ndict['Amount']: Amount",
-            "correct-answer":"answer-choice-2",
-            "lesson-new-row": true
             	
         }
     ]
