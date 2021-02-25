@@ -29,7 +29,7 @@
         {
             "lesson":"1.3",
             "description":"Beginner Lesson 1.3 - Strings",
-            "question":"<p>var1 = 'Hello World'<br>>var9 = 'Testing123'</p>",
+            "question":"<p>var1 = 'Hello World'<br>var9 = 'Testing123'</p>",
             "question-prompt":"Strings are created by enclosing characters in quotes. Select the correct variable:", 
             "answer-choice-1":"var2 = 'var2'", 
             "answer-choice-2":"var3 = var3", 
