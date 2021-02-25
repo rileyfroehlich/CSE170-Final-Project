@@ -167,6 +167,9 @@
     color: #000000;
     margin: 0 auto;
     position: relative;
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 /*
 .correct{
