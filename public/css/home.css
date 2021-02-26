@@ -1,3 +1,7 @@
+html,body{
+    width: 100%;
+}
+
 .container{
     border-color: red;
     align-items: center;
@@ -67,7 +71,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 75px;
+    margin-left: 60px;
     margin-top: 0px;
 }
 
@@ -90,6 +94,10 @@
     flex-direction: row;
     align-items: center;
     align-self: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
 }
 
 .navbar-cell{
@@ -136,15 +144,29 @@
     display: flex;
     align-items: center;
     background: #FFFFFF;
+    
     border: 1px solid #000000;
     box-sizing: border-box;
+    
     margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 /*END OF QUESTION CSS*/
 
 
 /*ANSWER CHOICE CSS*/
+.flex-container-answer-choice{
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .question-prompt{
     font-family: Open Sans;
     font-style: normal;
@@ -164,17 +186,53 @@
     line-height: 22px;
     text-align: center;
     color: #000000;
+
     margin: 0 auto;
-    position: relative;
     width: 100%;
     margin-left: 5px;
     margin-right: 5px;
 }
-/*
-.correct{
 
+.correct{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #4caf50;
 }
-*/
+
+.incorrect{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: red;
+}
+
+.link{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #769EFA;
+    text-decoration: none;
+}
+
+.link a {
+    text-decoration: none;
+}
+
+.link a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
 /*END OF ANSWER CHOICE CSS*/
 
 /*FLEX FORMATTING*/
@@ -186,6 +244,7 @@
     padding-top: 20px;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .column {

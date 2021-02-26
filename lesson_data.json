@@ -11,7 +11,7 @@
             "answer-choice-2":"-", 
             "answer-choice-3":"*", 
             "answer-choice-4":"/",
-            "correct-answer":"if this equals answer clicked good",
+            "correct-answer":"answer-choice-1",
             "lesson-new-row": true
         },
         {
@@ -61,19 +61,6 @@
             "answer-choice-4":"def func3(str)",
             "correct-answer":"answer-choice-4",
             "lesson-new-row": true
-            	
-        }, 
-        {
-            "lesson": "1.6", 
-            "description": "Beginner Lesson 1.6 - Dictionaries", 
-            "question": "<p>{'Fruit': 'Apple', 'Color': 'Red', 'Amount': 7}<br>print \"dict['Fruit']:\", dict['Fruit']<br>print \"dict['Amount']:\", dict['Amount']</p>", 
-            "question-prompt":"Select the appropriate result when the code above is executed.", 
-            "answer-choice-1":"dict['Fruit']: Fruit<br>dict['Amount']: Amount", 
-            "answer-choice-2":"dict['Fruit']: Apple<br>dict['Amount']: 7", 
-            "answer-choice-3":"dict['Fruit']: Fruit<br>dict['Amount']: 7", 
-            "answer-choice-4":"dict['Fruit']: Apple<br>dict['Amount']: Amount",
-            "correct-answer":"answer-choice-2",
-            "lesson-new-row": false
             	
         }
     ]
