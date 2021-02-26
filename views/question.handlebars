@@ -30,42 +30,38 @@
         <div class="question">
             {{{question}}}
         </div>
+   
+        <div class="question-prompt">
+            {{question-prompt}}
+        </div>
         
         <div class="flex-container-answer-choices">
-            <div class="row">
-                <div class="question-prompt">
-                    {{question-prompt}}
-                </div>
-            </div>
-            <div class="row">
-                <div class="column-answer-choice">
-                    <button class="answer-choice" id="answer-choice-1">{{answer-choice-1}}</button>
-                </div>
-                <div class="column-answer-choice">
-                    <button class="answer-choice" id="answer-choice-2" onclick="answer_select()">{{answer-choice-2}}</button>
-                </div>
-                <div class="column-answer-choice">
-                    <button class="answer-choice" id="answer-choice-3" onclick="answer_select()">{{answer-choice-3}}</button>
-                </div>
-                <div class="column-answer-choice">
-                    <button class="answer-choice" id="answer-choice-4" onclick="answer_select()">{{answer-choice-4}}</button>
-                </div>
-            </div>
-            <div class="row" id="display-outcome">
-            </div>
 
-            <div class="row" id="back-button" style="display: none">
-                <a class="link" href="../home">Back to Lesson Plan</a>
+            <div class="column-answer-choice">
+                <button class="answer-choice" id="answer-choice-1">{{answer-choice-1}}</button>
             </div>
+            <div class="column-answer-choice">
+                <button class="answer-choice" id="answer-choice-2" onclick="answer_select()">{{answer-choice-2}}</button>
+            </div>
+            <div class="column-answer-choice">
+                <button class="answer-choice" id="answer-choice-3" onclick="answer_select()">{{answer-choice-3}}</button>
+            </div>
+            <div class="column-answer-choice">
+                <button class="answer-choice" id="answer-choice-4" onclick="answer_select()">{{answer-choice-4}}</button>
+            </div>
+        
+        </div>
+
+        <div class="row" id="display-outcome">
+        </div>
+
+        <div class="row" id="back-button" style="display: none">
+            <a class="link" href="../home">Back to Lesson Plan</a>
         </div>
 
         <div id="correct-answer" style="display: none">
             {{correct-answer}}
         </div>
-
-
-
-
 
         <div class="navbar">
             <div class="navbar-cell">

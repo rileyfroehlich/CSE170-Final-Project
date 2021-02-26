@@ -8,15 +8,18 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+	var correct=false
+
 	$("button").click(function() {
 		var selected = $(this).attr('id')
 		var answer = $("#correct-answer").text().trim()
 
-		if( selected == answer ){
+		if( selected == answer || correct){
 			$('#display-outcome').text("Correct!")
 			$('#display-outcome').removeClass('incorrect')
 			$('#display-outcome').addClass('correct')
 			$('#back-button').show()
+			correct=true
 		}
 		else{
 			$('#display-outcome').text("Try again")
