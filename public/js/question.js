@@ -13,8 +13,12 @@ function initializePage() {
 	$("button").click(function() {
 		var selected = $(this).attr('id')
 		var answer = $("#correct-answer").text().trim()
+		
+		if(correct){
 
-		if( selected == answer || correct){
+		}
+		else if( selected == answer){
+			$(this).css('background-color', '#4caf50')
 			$('#display-outcome').text("Correct!")
 			$('#display-outcome').removeClass('incorrect')
 			$('#display-outcome').addClass('correct')
