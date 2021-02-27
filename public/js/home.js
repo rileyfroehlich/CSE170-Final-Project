@@ -8,7 +8,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
-    $('.lesson a').click(projectClicked);
+   // $('.lesson a').click(projectClicked);
 }
 
 function projectClicked(e){

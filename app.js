@@ -38,6 +38,8 @@ if ('development' == app.get('env')) {
 app.get('/', index.viewLogin);
 app.get('/home', index.viewHome);
 app.get('/question/:lesson', index.viewQuestion);
+app.post('/question/lessonCompleted', index.lessonCompleted)
+app.post('/question/lessonIncorrect', index.lessonIncorrect)
 // Example route
 // app.get('/users', user.list);
 

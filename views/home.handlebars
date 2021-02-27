@@ -26,23 +26,30 @@
                 </div>
             </div>
         </div>
+        <div class="welcome-message">
+            Welcome {{username}}!
+        </div>
         <div id="filler">
             <div class="flex-container-lessons">
                 {{#each projects}}
-                    {{#if lesson-new-row}}
-                        <div class="row">
-                            <div class="column">
-                                <div class="lesson">
-                                    <a href="question/{{lesson}}">{{lesson}}</a>
-                                </div>
-                            </div>
+                <script> var i=0; </script>
+                    {{#if lesson-completed}}
                     {{else}}
-                            <div class="column">
-                                <div class="lesson">
-                                    <a href="question/{{lesson}}">{{lesson}}</a>
+                        {{#if lesson-new-row}}
+                            <div class="row">
+                                <div class="column">
+                                    <div class="lesson">
+                                        <a href="question/{{lesson}}">{{lesson}}</a>
+                                    </div>
+                                </div>
+                        {{else}}
+                                <div class="column">
+                                    <div class="lesson">
+                                        <a href="question/{{lesson}}">{{lesson}}</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        {{/if}}
                     {{/if}}
                 {{/each}}
             </div>

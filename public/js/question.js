@@ -8,7 +8,9 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+
 	var correct=false
+	var lesson_num = $('#lesson-num').text().trim()
 
 	$("button").click(function() {
 		var selected = $(this).attr('id')
@@ -24,34 +26,32 @@ function initializePage() {
 			$('#display-outcome').addClass('correct')
 			$('#back-button').show()
 			correct=true
+			lessonCompleted(lesson_num)
 		}
 		else{
-			$('#display-outcome').text("Try again")
+			var tryAgainText = $('#display-outcome').text("Try again!\n\nStreak Reset")
+			tryAgainText.html(tryAgainText.html().replace(/\n/g,'<br/>'));
 			$('#display-outcome').removeClass('correct')
 			$('#display-outcome').addClass('incorrect')
 			$('#back-button').hide()
+			lessonIncorrect()
 		}
 	});
 }
 
-function answer_select(e){
-	return;
-	var selected = $(this).attr('id')
-	var answer = $("#correct-answer").text().trim()
-	console.log(selected)
-
-	$('#display-outcome').text("Correct!")
-
-	if( selected == answer ){
-		$('#display-outcome').text("Correct!")
-		$('#display-outcome').removeClass('incorrect')
-		$('#display-outcome').addClass('correct')
-		$('#back-button').show()
+function lessonCompleted(lesson_num) {
+	lesson_num = lesson_num
+	$.post('lessonCompleted', {lesson_num : lesson_num}, postCallback)
+  
+	function postCallback(res){
+		  return;
 	}
-	else{
-		$('#display-outcome').text("Try again")
-		$('#display-outcome').removeClass('correct')
-		$('#display-outcome').addClass('incorrect')
-	}
+}
 
+function lessonIncorrect() {
+	$.post('lessonIncorrect', postCallback)
+  
+	function postCallback(res){
+		  return;
+	}
 }
