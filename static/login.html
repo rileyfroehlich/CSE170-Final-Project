@@ -10,6 +10,7 @@
     
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="/js/facebook.js"></script>
 </head>
 
 <!-- Click the "Login" button and the form-data will be sent to "home.html" -->
@@ -22,6 +23,11 @@
             <input type="password" id="password" name="password"><br><br>
             <input type="submit" value="Login">
           </form>
+
+          <p class="facebookLogin">Please login through Facebook <br>
+				    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+				    </fb:login-button>
+			    </p>
     </div>
 
 </body>
