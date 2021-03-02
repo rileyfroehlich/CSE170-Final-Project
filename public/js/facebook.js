@@ -28,8 +28,20 @@ function checkLoginState() {
     //$("h1#name").text(response.name)
    // $("img#photo").attr("src",response.picture.data.url)
     
-    $("p.facebookLogin").show();
+    //$("p.facebookLogin").show();
     //$("p.facebookLogin").hide();
-    $("#name").text(response.name);
-    $("#photo").attr("src", response.picture.data.url);
+    //$("#name").text(response.name);
+    //$("#photo").attr("src", response.picture.data.url);
+
+    
+
+    var userername = response.name
+    $.post('saveUsername', {user: username}, postCallback)
+
+    window.location.replace("https://a7-doctorate-dre.herokuapp.com/home")
+
   }   
+
+  function postCallback(res){
+    return;
+  }
