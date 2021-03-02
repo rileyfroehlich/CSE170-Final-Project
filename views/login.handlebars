@@ -19,7 +19,7 @@
 <!-- Click the "Login" button and the form-data will be sent to "home.html" -->
 <body>
 	<div class="login-container">
-        <form action="home">
+        <form action="home" id="login-form">
             <label for="username">Username:</label>
             <input type="text" id="username" placeholder="Username" name="username" required/><br><br>
             <label for="password">Password:</label>
@@ -27,7 +27,7 @@
             <input type="submit" id="submit-button" value="Login"><br><br>
           </form>
 
-          <a href="#">Forgot password </a>
+          <a href="#forgotPassword">Forgot password </a>
 
           <p class="facebookLogin">Login through Facebook<br>
 				    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">

@@ -36,6 +36,7 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.viewLogin);
+app.post('/saveUsername', index.saveUsername)
 app.get('/home', index.viewHome);
 app.get('/question/:lesson', index.viewQuestion);
 app.post('/question/lessonCompleted', index.lessonCompleted)

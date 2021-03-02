@@ -13,6 +13,11 @@ exports.viewLogin = function(req, res){
   res.render('login', data);
 };
 
+exports.saveUsername = function(req, res){
+	
+	data.username = (req.body.user)
+}
+
 exports.viewQuestion = function(req, res){
 	var projectID = req.params.lesson;
 	var split = projectID.split(".");
