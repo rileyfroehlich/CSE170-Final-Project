@@ -14,7 +14,7 @@ exports.viewLogin = function(req, res){
 };
 
 exports.saveUsername = function(req, res){
-	data.username.push(req.body.user)
+	data.username=(req.body.user)
 
 
 	//NEXT LINES MAKE IT REFRESH ON EVERY LOGIN
