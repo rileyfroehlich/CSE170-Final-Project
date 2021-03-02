@@ -4,6 +4,21 @@
  */
 
 var data = require('../lesson_data.json')
+var newLesson = {
+	"lesson": "1.6", 
+	"description": "Beginner Lesson 1.6 - Dictionaries", 
+	"question": "<p>{'Fruit': 'Apple', 'Color': 'Red', 'Amount': 7}<br>print \"dict['Fruit']:\", dict['Fruit']<br>print \"dict['Amount']:\", dict['Amount']</p>", 
+	"question-prompt":"Select the appropriate result when the code above is executed.", 
+	"answer-choice-1":"dict['Fruit']: Fruit<br>dict['Amount']: Amount", 
+	"answer-choice-2":"dict['Fruit']: Apple<br>dict['Amount']: 7", 
+	"answer-choice-3":"dict['Fruit']: Fruit<br>dict['Amount']: 7", 
+	"answer-choice-4":"dict['Fruit']: Apple<br>dict['Amount']: Amount",
+	"correct-answer":"answer-choice-2",
+	"lesson-new-row": true
+}
+
+var newLessonUnlocked = 3
+var totalBeginnerLessons = 5
 
 exports.viewHome = function(req, res){
   res.render('home', data);
@@ -18,6 +33,11 @@ exports.saveUsername = function(req, res){
 
 
 	//NEXT LINES MAKE IT REFRESH ON EVERY LOGIN
+	var lessonLength=data['projects'].length
+	if( lessonLength > totalBeginnerLessons ){
+		var toDelete = lessonLength - totalBeginnerLessons
+		data["projects"].splice( totalBeginnerLessons, toDelete )
+	}
 
 	var i=0
 	for( var lesson in data['projects'] ){
@@ -34,6 +54,9 @@ exports.saveUsername = function(req, res){
 		i=i+1
 	}
 	data['streak'] = 0
+	data.difficulty = "Beginner"
+
+	console.log(data["projects"])
 }
 
 exports.viewQuestion = function(req, res){
@@ -75,6 +98,13 @@ exports.lessonCompleted = function(req,res){
 		}
 	}
 	data['streak'] = data['streak'] + 1
+
+	//add new lesson based on completion
+	if( i < newLessonUnlocked ){
+
+		data.projects.push(newLesson)
+		data.difficulty = "Intermediate"
+	}
 };
 
 exports.lessonIncorrect = function(req,res){

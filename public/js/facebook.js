@@ -37,8 +37,7 @@ function checkLoginState() {
 
     var userername = response.name
     $.post('saveUsername', {user: username}, postCallback)
-    window.location = ("https://a7-doctorate-dre.herokuapp.com/home")
-    setTimeout(postCallback,10000)
+    //window.location = ("https://a7-doctorate-dre.herokuapp.com/home")
     return false
   }   
 

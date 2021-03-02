@@ -213,9 +213,10 @@ html,body{
     display: flex;
     align-items: center;
     align-self: center;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .question-prompt{
@@ -308,11 +309,12 @@ button{
 }
 
 .column-answer-choice{
-    flex: 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 25%;
-    margin: 0 auto;
+    flex: 1 1 calc(50%);
+    margin-top: 10px;
 }
+
+.column-answer-choice:nth-child(odd) {
+    flex: 0 0 50%;
+  }
 /*END OF FLEX FORMATTING*/
