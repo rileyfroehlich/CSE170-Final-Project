@@ -14,8 +14,7 @@ exports.viewLogin = function(req, res){
 };
 
 exports.saveUsername = function(req, res){
-	
-	data.username = (req.body.user)
+	data.username.push(req.body.user)
 }
 
 exports.viewQuestion = function(req, res){

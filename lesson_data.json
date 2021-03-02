@@ -1,5 +1,5 @@
 { 
-    "username":"test",
+    "username":[],
     "difficulty":"Beginner",
     "streak":0,
     "projects": [
