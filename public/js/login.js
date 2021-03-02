@@ -16,7 +16,6 @@ function initializePage() {
 
 function initSaveUsername(e) {
 	$('#login-form').submit(function(e)	{
-
 		console.log("submitting form..")
 		var username = $('#username').val()
 		$.post('saveUsername', {user: username}, postCallback)
