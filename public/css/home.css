@@ -56,6 +56,18 @@ html,body{
 /*END OF WELCOME MESSAGE*/
 
 
+
+/*LOGIN CSS*/
+
+.login-container{
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*END OF LOGIN CSS*/
+
+
 /*LESSONS CSS*/
 .flex-container-lessons{
     display: flex;
