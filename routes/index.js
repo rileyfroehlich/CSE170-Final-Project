@@ -26,6 +26,14 @@ exports.viewQuestion = function(req, res){
     res.render('question', data['projects'][projectID]);
 };
 
+exports.viewLeaderboard = function(req, res){
+	res.render('leaderboard', data);
+};
+
+exports.viewProfile = function(req, res){
+	res.render('profile', data);
+};
+
 exports.lessonCompleted = function(req,res){
 	var lesson_num = req.body.lesson_num
 	var split = lesson_num.split(".");

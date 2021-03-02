@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="css/home.css" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+    </head>
+
+    <!-- https://www.w3schools.com/html/html_tables.asp -->
+    <body>
+        <div class="container">
+            <div class="top-bar">
+                <div class="flex-container-top-info">
+                    <div class="difficulty-setting">
+                        Leaderboard 
+                    </div>
+                    <div class="streak">
+                        <img src="../imgs/xp-logo.png" class="img">
+                        {{streak}}
+                    </div>
+                </div>
+            </div>
+
+            <div class="leaderboard-table">
+                <table style="width:100%">
+                    <tr>
+                    <th>Username</th>
+                    <th>Streak</th>
+                    </tr>
+                    <tr>
+                    <td>User 1</td>
+                    <td>50</td>
+                    </tr>
+                    <tr>
+                    <td>User 2</td>
+                    <td>48</td>
+                    </tr>
+                    <tr>
+                    <td>User 3</td>
+                    <td>37</td>
+                    </tr>
+                    <tr>
+                    <td>User 4</td>
+                    <td>34</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="navbar">
+                    <div class="navbar-cell">
+                        <a href="../home"><img src="/imgs/lessons-logo.png" class="img"></a>
+                    </div>
+                    <div class="navbar-cell">
+                        <a href="../profile"> <img src="/imgs/profile-logo.png" class="img"></a>
+                    </div>
+                    <div class="navbar-cell">
+                        <a class="active" href="#leaderboard"><img src="/imgs/leaderboards-logo.png" class="img"></a>
+                    </div>
+                    <div class="navbar-cell">
+                        <a href="#store"> <img src="/imgs/store-logo.png" class="img"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+    

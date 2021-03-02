@@ -67,6 +67,29 @@ html,body{
 
 /*END OF LOGIN CSS*/
 
+/*LEADERBOARD CSS*/
+.flex-container-leaderboard{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.streak{
+    font-family: Lexend Deca;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 45px;
+    color: #FFB800;
+    margin: 0 auto;
+}
+
+/*END OF LEADERBOARD CSS*/
+
+/*PROFILE CSS*/
+
+/*END OF PROFILE CSS*/
 
 /*LESSONS CSS*/
 .flex-container-lessons{

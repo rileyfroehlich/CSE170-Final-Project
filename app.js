@@ -39,6 +39,8 @@ app.get('/', index.viewLogin);
 app.post('/saveUsername', index.saveUsername)
 app.get('/home', index.viewHome);
 app.get('/question/:lesson', index.viewQuestion);
+app.get('/leaderboard', index.viewLeaderboard);
+app.get('/profile', index.viewProfile);
 app.post('/question/lessonCompleted', index.lessonCompleted)
 app.post('/question/lessonIncorrect', index.lessonIncorrect)
 // Example route
