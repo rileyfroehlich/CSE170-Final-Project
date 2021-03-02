@@ -44,10 +44,8 @@ exports.lessonCompleted = function(req,res){
 		}
 	}
 	data['streak'] = data['streak'] + 1
-	//res.send(lesson_num)
 };
 
 exports.lessonIncorrect = function(req,res){
 	data['streak'] = 0
-	//res.send(lesson_num)
 };
