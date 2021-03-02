@@ -55,8 +55,6 @@ exports.saveUsername = function(req, res){
 	}
 	data['streak'] = 0
 	data.difficulty = "Beginner"
-
-	console.log(data["projects"])
 }
 
 exports.viewQuestion = function(req, res){

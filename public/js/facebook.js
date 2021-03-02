@@ -14,31 +14,18 @@ function checkLoginState() {
     if (response.status === 'connected') {
       // Logged into your app and Facebook.
           console.log('Successfully logged in with Facebook');
-           FB.api('/me?fields=name,first_name,picture.width(480)', changeUser);
+           FB.api('/me?fields=name,first_name,picture.width(480)', saveUser);
     }
-
-
 
   }
 
-     function changeUser(response) {
-    //Add code to change name and image 
-    //$(".facebookLogin").hide()
-    //$().hide()
-    //$("h1#name").text(response.name)
-   // $("img#photo").attr("src",response.picture.data.url)
-    
-    //$("p.facebookLogin").show();
-    //$("p.facebookLogin").hide();
-    //$("#name").text(response.name);
-    //$("#photo").attr("src", response.picture.data.url);
-
-    
+  function saveUser(response) {
 
     var username = response.name
     $.post('saveUsername', {user: username}, postCallback)
     window.location = ("https://a7-doctorate-dre.herokuapp.com/home")
     return false
+
   }   
 
   function postCallback(res){
