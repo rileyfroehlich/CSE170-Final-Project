@@ -18,6 +18,7 @@ var newLesson = {
 }
 
 var newLessonUnlocked = 3
+var newLessonAdded = false
 var totalBeginnerLessons = 5
 
 exports.viewHome = function(req, res){
@@ -55,6 +56,7 @@ exports.saveUsername = function(req, res){
 	}
 	data['streak'] = 0
 	data.difficulty = "Beginner"
+	newLessonAdded = false
 }
 
 exports.viewQuestion = function(req, res){
@@ -98,10 +100,11 @@ exports.lessonCompleted = function(req,res){
 	data['streak'] = data['streak'] + 1
 
 	//add new lesson based on completion
-	if( i < newLessonUnlocked ){
+	if( i < newLessonUnlocked && !newLessonAdded ){
 
 		data.projects.push(newLesson)
 		data.difficulty = "Intermediate"
+		newLessonAdded = true
 	}
 };
 
