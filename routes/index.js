@@ -15,6 +15,25 @@ exports.viewLogin = function(req, res){
 
 exports.saveUsername = function(req, res){
 	data.username.push(req.body.user)
+
+
+	//NEXT LINES MAKE IT REFRESH ON EVERY LOGIN
+
+	var i=0
+	for( var lesson in data['projects'] ){
+
+		data['projects'][lesson]['lesson-completed'] = false
+
+		if( i%2 == 0){
+			data['projects'][lesson]['lesson-new-row'] = true
+		}
+		else{
+			data['projects'][lesson]['lesson-new-row'] = false
+		}
+
+		i=i+1
+	}
+	data['streak'] = 0
 }
 
 exports.viewQuestion = function(req, res){
