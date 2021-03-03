@@ -32,44 +32,33 @@
         <div class="welcome-message">
             Welcome {{username}}!<br>Choose any lesson to get started
         </div>
-        <div id="filler">
-            <div class="flex-container-lessons">
-                {{#each projects}}
-                <script> var i=0; </script>
-                    {{#if lesson-completed}}
-                    {{else}}
-                        {{#if lesson-new-row}}
-                            <div class="row">
-                                <div class="column">
-                                    <div class="lesson">
-                                        <a href="question/{{lesson}}">{{lesson}}</a>
-                                    </div>
-                                </div>
-                        {{else}}
-                                <div class="column">
-                                    <div class="lesson">
-                                        <a href="question/{{lesson}}">{{lesson}}</a>
-                                    </div>
-                                </div>
-                            </div>
-                        {{/if}}
-                    {{/if}}
-                {{/each}}
-            </div>
-            </div>
 
-            <div class="navbar">
-                <div class="navbar-cell">
-                    <a class="active" href="#lessons"><img src="../imgs/lessons-logo.png" class="img"></a>
-                </div>
-                <div class="navbar-cell">
-                    <a href="../profile"> <img src="../imgs/profile-logo.png" class="img"></a>
-                </div>
-                <div class="navbar-cell">
-                    <a href="../leaderboard"><img src="../imgs/leaderboards-logo.png" class="img"></a>
-                </div>
+        <div class="flex-container-lessons">
+            {{#each projects}}
+                {{#if lesson-completed}}
+                {{else}}
+                    <div class="column">
+                        <div class="lesson">
+                            <a href="question/{{lesson}}">{{lesson}}</a>
+                        </div>
+                    </div>
+                {{/if}}
+            {{/each}}
+        </div>
+
+
+        <div class="navbar">
+            <div class="navbar-cell">
+                <a class="active" href="#lessons"><img src="../imgs/lessons-logo.png" class="img"></a>
+            </div>
+            <div class="navbar-cell">
+                <a href="../profile"> <img src="../imgs/profile-logo.png" class="img"></a>
+            </div>
+            <div class="navbar-cell">
+                <a href="../leaderboard"><img src="../imgs/leaderboards-logo.png" class="img"></a>
             </div>
         </div>
+    
     </div>
 
 </body>

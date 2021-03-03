@@ -114,10 +114,10 @@ html,body{
 /*LESSONS CSS*/
 .flex-container-lessons{
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     overflow-y: auto;
     max-height: 440px;
+    flex-wrap: wrap;
 }
 
 .lesson{
@@ -325,8 +325,14 @@ button{
 }
 
 .column {
-    flex: 50%;
+    display: flex;
+    flex: 1 1 calc(50%);
+    margin-top: 10px;
 }
+
+.column:nth-child(odd) {
+    flex: 0 0 50%;
+  }
 
 .column-answer-choice{
     display: flex;
