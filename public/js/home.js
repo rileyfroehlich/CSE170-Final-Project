@@ -8,6 +8,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 	initLogout()
+	initWelcomeMessage()
 }
 
 function initLogout(e) {
@@ -19,4 +20,15 @@ function initLogout(e) {
 		//window.location.replace("http://localhost:3000/")
 		return false
 	})
+}
+
+function initWelcomeMessage(e){
+
+	if($(".lesson").length <= 0){
+		var prompt = $('#lesson-prompt').text("All lessons completed!\nGood Work!")
+		prompt.html(prompt.html().replace(/\n/g,'<br/>'));
+	}
+	else{
+		$('#lesson-prompt').text("Choose any lesson to get started")
+	}
 }
