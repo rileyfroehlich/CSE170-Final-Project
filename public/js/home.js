@@ -11,12 +11,12 @@ function initializePage() {
 }
 
 function initLogout(e) {
-	$('#login-form').submit(function(e)	{
+	$('.log-out-button').click(function(e)	{
+
 		window.location.replace("https://a7-doctorate-dre.herokuapp.com/")
+
+		//<<<<<<<<<<<<<UNCOMMENT FOR LOCAL TESTING>>>>>>>>>>>>>
+		//window.location.replace("http://localhost:3000/")
 		return false
 	})
-	
-	function postCallback(res){
-		return;
-	}
 }

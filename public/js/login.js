@@ -17,8 +17,10 @@ function initSaveUsername(e) {
 		console.log("submitting form..")
 		var username = $('#username').val()
 		$.post('saveUsername', {user: username}, postCallback)
-		//window.location.replace("https://a7-doctorate-dre.herokuapp.com/home")
-		window.location.replace("http://localhost:3000/home")
+		window.location.replace("https://a7-doctorate-dre.herokuapp.com/home")
+		
+		//<<<<<<<<<<<<UNCOMMENT FOR LOCAL TESTING>>>>>>>>>>>>>>
+		//window.location.replace("http://localhost:3000/home")
 		return false
 	})
 	
