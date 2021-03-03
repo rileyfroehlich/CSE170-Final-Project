@@ -74,6 +74,17 @@ html,body{
     margin-top: 50px;
 }
 
+.login-appname{
+    font-family: Lexend Deca;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 45px;
+    text-align: center;
+    color: #769EFA;
+    margin: 0 auto;
+}
+
 /*END OF LOGIN CSS*/
 
 /*LEADERBOARD CSS*/

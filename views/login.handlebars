@@ -19,21 +19,21 @@
 <!-- Click the "Login" button and the form-data will be sent to "home.html" -->
 <body>
 	<div class="login-container">
-      <form id="login-form">
-          <label for="appname">Code•On</label><br><br>
-          <label for="username">Username:</label>
-          <input type="text" id="username" placeholder="Username" name="username" required/><br><br>
-          <label for="password">Password:</label>
-          <input type="text" id="password" placeholder="Password" name="password" required/><br><br>
-          <input type="submit" id="submit-button" value="Login"><br><br>
-        </form>
+    <p class="login-appname">Code<img src="../imgs/lessons-logo.png" class="img">On</p><br><br>
+    <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Username" name="username" required/><br><br>
+        <label for="password">Password:</label>
+        <input type="text" id="password" placeholder="Password" name="password" required/><br><br>
+        <input type="submit" id="submit-button" value="Login"><br><br>
+      </form>
 
-      <a href="#forgotPassword">Forgot password </a>
-      
-      <p class="facebookLogin">Login through Facebook<br>
-        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-        </fb:login-button>
-      </p>
+    <a href="#forgotPassword">Forgot password </a>
+    
+    <p class="facebookLogin">Login through Facebook<br>
+      <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+      </fb:login-button>
+    </p>
   </div>
 
 </body>
