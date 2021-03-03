@@ -6,7 +6,7 @@
 var data = require('../lesson_data.json')
 var newLesson = {
 	"lesson": "1.6", 
-	"description": "Beginner Lesson 1.6 - Dictionaries", 
+	"description": "Lesson 1.6 - Dictionaries", 
 	"question": "<p>{'Fruit': 'Apple', 'Color': 'Red', 'Amount': 7}<br>print \"dict['Fruit']:\", dict['Fruit']<br>print \"dict['Amount']:\", dict['Amount']</p>", 
 	"question-prompt":"Select the appropriate result when the code above is executed.", 
 	"answer-choice-1":"dict['Fruit']: Fruit<br>dict['Amount']: Amount", 
@@ -31,7 +31,7 @@ exports.viewLogin = function(req, res){
 
 exports.saveUsername = function(req, res){
 	data.username=(req.body.user)
-	
+
 	//NEXT LINES MAKE IT REFRESH ON EVERY LOGIN
 	var lessonLength=data['projects'].length
 	if( lessonLength > totalBeginnerLessons ){

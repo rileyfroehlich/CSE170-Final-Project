@@ -7,25 +7,16 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	// your code here
-   // $('.lesson a').click(projectClicked);
+	initLogout()
 }
 
-function projectClicked(e){
-    e.preventDefault()
-
-    var lessonID = $(this).text().trim()
-
-	var getURL = "http://localhost:3000/question/" + lessonID
-    console.log(getURL)
-	$.get(getURL, callBack)
-}
-
-function callBack(data){
-	return
-	console.log(data)
-	var selector = '#project' + data['id'] + ' .details'
-	$(selector).html(data['title']+ '<br><br>' + data['date'] + '<br><br>' + data['summary'])
-
-
+function initLogout(e) {
+	$('#login-form').submit(function(e)	{
+		window.location.replace("https://a7-doctorate-dre.herokuapp.com/")
+		return false
+	})
+	
+	function postCallback(res){
+		return;
+	}
 }
