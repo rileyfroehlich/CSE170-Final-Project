@@ -109,6 +109,17 @@ html,body{
 
 /*PROFILE CSS*/
 
+.profile-name{
+    text-align:center;
+    font-family: Lexend Deca;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 45px;
+    color: #0044ff;
+    margin: 0 auto;
+}
+
 /*END OF PROFILE CSS*/
 
 /*LESSONS CSS*/
