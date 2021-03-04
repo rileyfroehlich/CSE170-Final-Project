@@ -88,22 +88,35 @@ html,body{
 /*END OF LOGIN CSS*/
 
 /*LEADERBOARD CSS*/
-.flex-container-leaderboard{
-    display: flex;
-    flex-direction: row;
-    max-width: 100%;
-    justify-content: space-around;
+.leaderboard-container{
+    max-height: 440px;
+    margin: 0 auto;
     align-items: center;
 }
-.streak{
+
+.leaderboard-table{
+    width: 100%;
+}
+
+.leaderboard-table th{
+    text-align: center;
     font-family: Lexend Deca;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
-    line-height: 45px;
-    color: #FFB800;
-    margin: 0 auto;
+    line-height: 40px;
+    color: #4079ff;
 }
+.leaderboard-table td{
+    font-family: Lexend Deca;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: #5c88ee;
+    text-align: center;
+}
+
 
 /*END OF LEADERBOARD CSS*/
 
@@ -111,13 +124,27 @@ html,body{
 
 .profile-name{
     text-align:center;
+    margin: 0 auto;
+    max-height: 440px;
+}
+
+.profile-username{
     font-family: Lexend Deca;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
     line-height: 45px;
-    color: #0044ff;
-    margin: 0 auto;
+    color: #769EFA;
+}
+
+.profile-name a{
+    font-family: Lexend Deca;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 45px;
+    color: #0045e6;
+    text-decoration: none;
 }
 
 /*END OF PROFILE CSS*/
