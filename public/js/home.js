@@ -8,6 +8,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 	initWelcomeMessage()
+	initLogout()
 }
 
 function initWelcomeMessage(e){
@@ -19,4 +20,15 @@ function initWelcomeMessage(e){
 	else{
 		$('#lesson-prompt').text("Choose any lesson to get started")
 	}
+}
+
+function initLogout(e) {
+	$('.log-out-button').click(function(e)	{
+
+		window.location.replace("https://a7-doctorate-dre.herokuapp.com/")
+
+		//<<<<<<<<<<<<<UNCOMMENT FOR LOCAL TESTING>>>>>>>>>>>>>
+		//window.location.replace("http://localhost:3000/")
+		return false
+	})
 }
