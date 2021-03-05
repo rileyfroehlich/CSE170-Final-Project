@@ -142,9 +142,18 @@ html,body{
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
-    line-height: 45px;
+    line-height: 30px;
     color: #0045e6;
     text-decoration: none;
+}
+
+.profile-streak-info{
+    font-family: Lexend Deca;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: #769EFA;
 }
 
 /*END OF PROFILE CSS*/
@@ -250,7 +259,8 @@ html,body{
     line-height: 22px;
     display: flex;
     align-items: center;
-    background: #FFFFFF;
+    background: #2c2c2c;
+    color: rgb(255, 255, 255);
     
     border: 1px solid #000000;
     box-sizing: border-box;
