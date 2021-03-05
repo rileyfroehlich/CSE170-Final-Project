@@ -23,7 +23,7 @@ function checkLoginState() {
 
     var username = response.name
     $.post('saveUsername', {user: username}, postCallback)
-    window.location.replace("https://a7-doctorate-dre.herokuapp.com/home")
+    window.location.replace("https://a8-doctorate-dre.herokuapp.com/home")
     return false
   }   
 
