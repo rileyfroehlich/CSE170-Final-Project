@@ -43,6 +43,7 @@ app.get('/leaderboard', index.viewLeaderboard);
 app.get('/profile', index.viewProfile);
 app.post('/question/lessonCompleted', index.lessonCompleted)
 app.post('/question/lessonIncorrect', index.lessonIncorrect)
+app.post('/addFriend', index.addFriend)
 // Example route
 // app.get('/users', user.list);
 

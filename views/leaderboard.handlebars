@@ -57,8 +57,31 @@
                         <td>{{username}}</td>
                         <td>{{streak}}</td>
                     </tr>
+
+                    {{#each friends}}
+                        <tr>
+                            <td>{{username}}</td>
+                            <td>{{streak}}</td>
+                        </tr>
+                    {{/each}}
                 </table>
             </div>
+
+            <button class="open-button" onclick="openForm()">Add Friends</button>
+            <div class="form-popup" id="myForm">
+                <form class="form-container">
+                    <label for="email"><b>Add Friend</b></label>
+                    <input type="text" placeholder="Enter Username" name="email" id="username" required>
+                    <button type="submit" class="btn" id="confirm-friend" onclick="reload()">Add Friend</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+
+            <script>
+                function reload(){
+                    location.reload()
+                }
+            </script>
 
             <div class="navbar">
                     <div class="navbar-cell">

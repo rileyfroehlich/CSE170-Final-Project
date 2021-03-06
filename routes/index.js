@@ -55,6 +55,7 @@ exports.saveUsername = function(req, res){
 	}
 	data['streak'] = 0
 	data.difficulty = "Beginner"
+	data.friends = []
 	newLessonAdded = false
 }
 
@@ -110,3 +111,8 @@ exports.lessonCompleted = function(req,res){
 exports.lessonIncorrect = function(req,res){
 	data['streak'] = 0
 };
+
+exports.addFriend = function(req,res){
+	var toPush = { "username":req.body.user,"streak":0}
+	data.friends.push(toPush)
+}

@@ -38,7 +38,16 @@
             <p class="profile-username">Streak: <img src="/imgs/xp-logo.png" class="img"> {{streak}}</p>
             <p class="profile-streak-info">Streak measures how many questions you answer correctly in succession.<br>Try to get the highest number possible and beat your classmates!</p>
             <br><br>
-            <a href="#">Add Friends</a>
+            <button class="open-button" onclick="openForm()">Add Friends</button>
+            <div class="form-popup" id="myForm">
+                <form class="form-container">
+                    <label for="email"><b>Add Friend</b></label>
+                    <input type="text" placeholder="Enter Username" name="email" id="username" required>
+                    <button type="submit" class="btn" id="confirm-friend">Add Friend</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+
         </div>
 
         <div class="navbar">
