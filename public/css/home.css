@@ -92,6 +92,7 @@ html,body{
     max-height: 440px;
     margin: 0 auto;
     align-items: center;
+    overflow-y: auto;
 }
 
 .leaderboard-table{
