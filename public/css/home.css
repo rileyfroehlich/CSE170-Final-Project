@@ -8,6 +8,11 @@ html,body{
     float: center;
 }
 
+/*COMPLETED LESSON*/
+.completed{
+    color: #4CAF50;
+}
+
 /*TOP BAR INFO*/
 .flex-container-top-info{
     display: flex;

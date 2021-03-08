@@ -39,6 +39,9 @@
         <div class="flex-container-lessons">
             {{#each projects}}
                 {{#if lesson-completed}}
+                    <div class="completed">
+                        <h1>{{lesson}}</h1><br/>
+                    </div>
                 {{else}}
                     <div class="column">
                         <div class="lesson">
