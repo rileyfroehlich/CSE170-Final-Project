@@ -11,10 +11,23 @@ function initializePage() {
 
 	var correct=false
 	var lesson_num = $('#lesson-num').text().trim()
+	var answer = $("#correct-answer").text().trim()
+	var completed = $("#lesson-completed").text().trim()
+
+	console.log(completed)
+
+	if( completed ){
+		$("#"+answer).css('background-color', '#4caf50')
+		$('#display-outcome').text("Correct!")
+		$('#display-outcome').removeClass('incorrect')
+		$('#display-outcome').addClass('correct')
+		$('#back-button').show()
+		correct=true
+	}
 
 	$("button").click(function() {
 		var selected = $(this).attr('id')
-		var answer = $("#correct-answer").text().trim()
+
 		
 		if(correct){
 

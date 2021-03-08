@@ -8,11 +8,6 @@ html,body{
     float: center;
 }
 
-/*COMPLETED LESSON*/
-.completed{
-    color: #4CAF50;
-}
-
 /*TOP BAR INFO*/
 .flex-container-top-info{
     display: flex;
@@ -173,13 +168,24 @@ html,body{
     flex-wrap: wrap;
 }
 
+/*COMPLETED LESSON*/
+.completed{
+    border: 2px solid #4CAF50;
+    background-color: #a6ffa9;
+}
+
+.completed a {
+    color: rgb(0, 209, 0);
+    border-color: rgb(0, 209, 0);
+}
+
 .lesson{
     /*border circle*/
-    border: 2px solid #394E99;
     box-sizing: border-box;
     height: 100px;
     width: 100px;
     border-radius: 50%;
+    text-decoration: none;
 
     /*font*/
     font-family: Lexend Deca;
@@ -197,14 +203,26 @@ html,body{
     margin-left: 40px;
 }
 
+.incomplete{
+    border: 2px solid #394E99;
+    text-decoration: none;
+}
+
 .lesson a{
     text-align: center;
     text-decoration: none;
 }
 
-.lesson a:hover {
-    color: rgb(0, 209, 0);
-    border-color: rgb(0, 209, 0);
+.incomplete:hover {
+    color: #4CAF50;
+    border-color: #4CAF50;
+    text-decoration: none;
+}
+
+.incomplete a:hover {
+    color: #4CAF50;
+    border-color: #4CAF50;
+    text-decoration: none;
 }
 /*END OF LESSONS CSS*/
 

@@ -39,14 +39,20 @@
         <div class="flex-container-lessons">
             {{#each projects}}
                 {{#if lesson-completed}}
-                    <div class="completed">
-                        <h1>{{lesson}}</h1><br/>
+                    <div class="column">
+                        <a href="question/{{lesson}}">
+                            <div class="lesson completed">
+                                {{lesson}}
+                            </div>
+                        </a>
                     </div>
                 {{else}}
                     <div class="column">
-                        <div class="lesson">
-                            <a href="question/{{lesson}}">{{lesson}}</a>
-                        </div>
+                        <a href="question/{{lesson}}">
+                            <div class="lesson incomplete">
+                                {{lesson}}
+                            </div>
+                        </a>
                     </div>
                 {{/if}}
             {{/each}}
