@@ -14,7 +14,6 @@
             "answer-choice-3":"*", 
             "answer-choice-4":"/",
             "correct-answer":"answer-choice-1",
-            "lesson-new-row": true,
             "lesson-completed": false
         },
         {
@@ -27,7 +26,6 @@
             "answer-choice-3":"Value of expression is 50<br>Hello!", 
             "answer-choice-4":"This code will produce an error.", 
             "correct-answer":"answer-choice-3",
-            "lesson-new-row": false,
             "lesson-completed": false
         },
         {
@@ -40,7 +38,6 @@
             "answer-choice-3":"var 4 = 'var4'", 
             "answer-choice-4":"var 5 = '' var5",
             "correct-answer":"answer-choice-3",
-            "lesson-new-row": true,
             "lesson-completed": false
         },
         {
@@ -53,7 +50,6 @@
             "answer-choice-3":"list4 = [6, 7, 8, 9, 10];", 
             "answer-choice-4":"list4 = {6, 7, 8, 9, 10};",
             "correct-answer":"answer-choice-3",
-            "lesson-new-row": false,
             "lesson-completed": false	
         },
         {
@@ -66,7 +62,6 @@
             "answer-choice-3":"def func2[str]", 
             "answer-choice-4":"def func3(str)",
             "correct-answer":"answer-choice-4",
-            "lesson-new-row": true,
             "lesson-completed": false
             	
         }

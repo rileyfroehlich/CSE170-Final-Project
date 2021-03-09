@@ -13,8 +13,7 @@ var newLesson = {
 	"answer-choice-2":"dict['Fruit']: Apple<br>dict['Amount']: 7", 
 	"answer-choice-3":"dict['Fruit']: Fruit<br>dict['Amount']: 7", 
 	"answer-choice-4":"dict['Fruit']: Apple<br>dict['Amount']: Amount",
-	"correct-answer":"answer-choice-2",
-	"lesson-new-row": true
+	"correct-answer":"answer-choice-2"
 }
 
 var newLessonUnlocked = 3
@@ -43,14 +42,6 @@ exports.saveUsername = function(req, res){
 	for( var lesson in data['projects'] ){
 
 		data['projects'][lesson]['lesson-completed'] = false
-
-		if( i%2 == 0){
-			data['projects'][lesson]['lesson-new-row'] = true
-		}
-		else{
-			data['projects'][lesson]['lesson-new-row'] = false
-		}
-
 		i=i+1
 	}
 	data['streak'] = 0
@@ -87,13 +78,6 @@ exports.lessonCompleted = function(req,res){
 	var i=0
 	for( var lesson in data['projects'] ){
 		if(!data['projects'][lesson]['lesson-completed']){
-			if( i%2 == 0){
-				data['projects'][lesson]['lesson-new-row'] = true
-			}
-			else{
-				data['projects'][lesson]['lesson-new-row'] = false
-			}
-
 			i=i+1
 		}
 	}
