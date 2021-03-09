@@ -7,7 +7,7 @@
         {
             "lesson": "1.1",
             "description":"Lesson 1.1 - Operators", 
-            "question":"<p>1   num1 = 5<br>2   num2 = 7<br>3   sum = num1 ___ num2<br>4   print(‘The sum of {0} and {1} is {2}’.format(num1, num2, sum))</p>",
+            "question":"<p>1|   num1 = 5<br>2|   num2 = 7<br>3|   sum = num1 ___ num2<br>4|   print(‘The sum of {0} and {1} is {2}’.format(num1, num2, sum))</p>",
             "question-prompt":"Select the operator so sum is equal to num1 plus num2:", 
             "answer-choice-1":"+", 
             "answer-choice-2":"-", 
@@ -19,7 +19,7 @@
         {
             "lesson": "1.2", 
             "description":"Lesson 1.2 - Loops", 
-            "question":"<p>1   var = 50<br>2   if ( var == 50 ) : print \"Value of expression is 50\"<br>3   print \"Hello!\"</p>", 
+            "question":"<p>1|   var = 50<br>2|   if ( var == 50 ) : print \"Value of expression is 50\"<br>3|   print \"Hello!\"</p>", 
             "question-prompt":"What is the result when the above code is executed?", 
             "answer-choice-1":"Value of expression is 50", 
             "answer-choice-2":"Hello!", 
@@ -31,7 +31,7 @@
         {
             "lesson":"1.3",
             "description":"Lesson 1.3 - Strings",
-            "question":"<p>1   var1 = 'Hello World'<br>2   var9 = 'Testing123'</p>",
+            "question":"<p>1|   var1 = 'Hello World'<br>2|   var9 = 'Testing123'</p>",
             "question-prompt":"Strings are created by enclosing characters in quotes. Select the correct variable:", 
             "answer-choice-1":"var2 = <var2>", 
             "answer-choice-2":"var3 = var3", 
@@ -43,7 +43,7 @@
         {
             "lesson":"1.4",
             "description":"Lesson 1.4 - Lists",
-            "question":"<p>1   list1 = ['chemistry', 'biology', 2017, 2019];<br>2   list2 = [1, 2, 3, 4, 5 ];<br>3   list3 = ['a', 'b', 'c', 'd']</p>",
+            "question":"<p>1|   list1 = ['chemistry', 'biology', 2017, 2019];<br>2|   list2 = [1, 2, 3, 4, 5 ];<br>3|   list3 = ['a', 'b', 'c', 'd']</p>",
             "question-prompt":"Lists are written as a list of comma-separated items between square brackets where items do not need to be of the same type.. Select the correct list:", 
             "answer-choice-1":"list4 = 6, 7, 8, 9, 10", 
             "answer-choice-2":"list4 = [[6, 7, 8, 9, 10]];", 
@@ -55,7 +55,7 @@
         {
             "lesson": "1.5", 
             "description": "Lesson 1.5 - Functions", 
-            "question": "<p>1   def printer( str ):<br>2   'Printing a passed string into this function printer'<br>3   print str<br>4   return</p>", 
+            "question": "<p>1|   def printer( str ):<br>2|   'Printing a passed string into this function printer'<br>3|   print str<br>4|   return</p>", 
             "question-prompt":"Function blocks begin with the keyword def following by the function name and parentheses. Select the correct function definition:", 
             "answer-choice-1":"def def", 
             "answer-choice-2":"def func1{str}", 
