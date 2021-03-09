@@ -7,7 +7,7 @@ var data = require('../lesson_data.json')
 var newLesson = {
 	"lesson": "1.6", 
 	"description": "Lesson 1.6 - Dictionaries", 
-	"question": "<p>1|   {'Fruit': 'Apple', 'Color': 'Red', 'Amount': 7}<br>2|   print \"dict['Fruit']:\", dict['Fruit']<br>3|   print \"dict['Amount']:\", dict['Amount']</p>", 
+	"question": "<p>1|dict={'Fruit': 'Apple', 'Color': 'Red'}<br>2|   print(\"dict['Fruit']:\", dict['Fruit'])<br>3|   print(\"dict['Amount']:\", dict['Amount'])</p>", 
 	"question-prompt":"Select the appropriate result when the code above is executed.", 
 	"answer-choice-1":"dict['Fruit']: Fruit<br>dict['Amount']: Amount", 
 	"answer-choice-2":"dict['Fruit']: Apple<br>dict['Amount']: 7", 
