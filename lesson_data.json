@@ -7,7 +7,7 @@
         {
             "lesson": "1.1",
             "description":"Lesson 1.1 - Operators", 
-            "question":"<p>1|num1 = 5<br>2|num2 = 7<br>3|sum = num1 ___ num2<br>4|print(‘The sum of {0} and {1} is {2}’.format(num1,<br>5|num2, sum))</p>",
+            "question":"<p>1|num1 = 5<br>2|num2 = 7<br>3|sum = num1 ___ num2<br>4|print(‘The sum of {0} and {1} is<br>5|{2}’.format(num1,num2,sum))</p>",
             "question-prompt":"Select the operator so sum is equal to num1 plus num2:", 
             "answer-choice-1":"+", 
             "answer-choice-2":"-", 
