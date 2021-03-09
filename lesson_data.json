@@ -19,11 +19,11 @@
         {
             "lesson": "1.2", 
             "description":"Lesson 1.2 - Loops", 
-            "question":"<p>1|   var = 50<br>2|   if ( var == 50 ) : print \"Value of expression is 50\"<br>3|   print \"Hello!\"</p>", 
+            "question":"<p>1|   var = 50<br>2|   if ( var == 50 ) : print \"Value is 50\"<br>3|   print \"Hello!\"</p>", 
             "question-prompt":"What is the result when the above code is executed?", 
-            "answer-choice-1":"Value of expression is 50", 
+            "answer-choice-1":"Value is 50", 
             "answer-choice-2":"Hello!", 
-            "answer-choice-3":"Value of expression is 50<br>Hello!", 
+            "answer-choice-3":"Value is 50<br>Hello!", 
             "answer-choice-4":"This code will produce an error.", 
             "correct-answer":"answer-choice-3",
             "lesson-completed": false
@@ -55,8 +55,8 @@
         {
             "lesson": "1.5", 
             "description": "Lesson 1.5 - Functions", 
-            "question": "<p>1|   def printer( str ):<br>2|   'Printing a passed string into this function printer'<br>3|   print str<br>4|   return</p>", 
-            "question-prompt":"Function blocks begin with the keyword def following by the function name and parentheses. Select the correct function definition:", 
+            "question": "<p>1|   def printer( str ):<br>2|      'Printing a passed string into this function printer'<br>3|   print str<br>4|   return</p>", 
+            "question-prompt":"Function blocks begin with the keyword def followed by the function name and parentheses. Select the correct function definition:", 
             "answer-choice-1":"def def", 
             "answer-choice-2":"def func1{str}", 
             "answer-choice-3":"def func2[str]", 
