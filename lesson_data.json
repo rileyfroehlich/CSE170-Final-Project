@@ -7,7 +7,7 @@
         {
             "lesson": "1.1",
             "description":"Lesson 1.1 - Operators", 
-            "question":"<p>1|   num1 = 5<br>2|   num2 = 7<br>3|   sum = num1 ___ num2<br>4|   print(‘The sum of {0} and {1} is {2}’.format(num1, num2, sum))</p>",
+            "question":"<p>1|   num1 = 5<br>2|   num2 = 7<br>3|   sum = num1 ___ num2<br>4|   print(‘The sum of {0} and {1} is {2}’.format(num1,<br>5|   num2, sum))</p>",
             "question-prompt":"Select the operator so sum is equal to num1 plus num2:", 
             "answer-choice-1":"+", 
             "answer-choice-2":"-", 
@@ -55,7 +55,7 @@
         {
             "lesson": "1.5", 
             "description": "Lesson 1.5 - Functions", 
-            "question": "<p>1|def printer( str ):<br>2|print('Printing string passed into this function'<br>3|print(str)<br>4|return</p>", 
+            "question": "<p>1|def printer( str ):<br>2|print('Printing string passed into this function')<br>3|print(str)<br>4|return</p>", 
             "question-prompt":"Function blocks begin with the keyword def followed by the function name and parentheses. Select the correct function definition:", 
             "answer-choice-1":"def def", 
             "answer-choice-2":"def func1{str}", 

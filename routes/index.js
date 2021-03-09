@@ -1,19 +1,20 @@
 
 /*
- * GET home page.
+ * GET home page.   
  */
 
 var data = require('../lesson_data.json')
 var newLesson = {
 	"lesson": "1.6", 
 	"description": "Lesson 1.6 - Dictionaries", 
-	"question": "<p>1|dict={'Fruit': 'Apple', 'Color': 'Red'}<br>2|   print(\"dict['Fruit']:\", dict['Fruit'])<br>3|   print(\"dict['Amount']:\", dict['Amount'])</p>", 
+	"question": "<p>1   {'Fruit': 'Apple', 'Color': 'Red', 'Amount': 7}<br>2   print \"dict['Fruit']:\", dict['Fruit']<br>3   print \"dict['Amount']:\", dict['Amount']</p>", 
 	"question-prompt":"Select the appropriate result when the code above is executed.", 
 	"answer-choice-1":"dict['Fruit']: Fruit<br>dict['Amount']: Amount", 
 	"answer-choice-2":"dict['Fruit']: Apple<br>dict['Amount']: 7", 
 	"answer-choice-3":"dict['Fruit']: Fruit<br>dict['Amount']: 7", 
 	"answer-choice-4":"dict['Fruit']: Apple<br>dict['Amount']: Amount",
-	"correct-answer":"answer-choice-2"
+	"correct-answer":"answer-choice-2",
+	"lesson-new-row": true
 }
 
 var newLessonUnlocked = 3
@@ -42,6 +43,14 @@ exports.saveUsername = function(req, res){
 	for( var lesson in data['projects'] ){
 
 		data['projects'][lesson]['lesson-completed'] = false
+
+		if( i%2 == 0){
+			data['projects'][lesson]['lesson-new-row'] = true
+		}
+		else{
+			data['projects'][lesson]['lesson-new-row'] = false
+		}
+
 		i=i+1
 	}
 	data['streak'] = 0
@@ -78,6 +87,13 @@ exports.lessonCompleted = function(req,res){
 	var i=0
 	for( var lesson in data['projects'] ){
 		if(!data['projects'][lesson]['lesson-completed']){
+			if( i%2 == 0){
+				data['projects'][lesson]['lesson-new-row'] = true
+			}
+			else{
+				data['projects'][lesson]['lesson-new-row'] = false
+			}
+
 			i=i+1
 		}
 	}
